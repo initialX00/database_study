@@ -80,7 +80,6 @@ where
 
 
 /*백진우가 신청한 교과목의 이름과 교수를 출력*/
-/*입력 실수있으니까 직접 고쳐보기*/
 select
 	(select
 		(select
@@ -114,24 +113,34 @@ where
 
 /*운영체제를 듣고있는 학생을 뽑으시오*/
 /*서브커리값이 복수이므로 불가능한 상황이다.*/
+with crit_id as (
+	select
+		course_registering_information_id
+	from
+		course_registering_information_tb
+	where
+		course_id =
+		(select
+			course_id
+		from
+			course_tb
+		where
+			course_name = '운영체제')
+	)
 
 select
-	(select
-		student_id
-	from
-		course_registering_tb as crt
-	where
-		crt.course_registering_information_tb = crit.course_registering_information_id)
+	student_name
 from
-	course_registering_information_tb as crit
+	student_tb
 where
-	course_id =
-	(select
-		course_id
-	from
-		course_tb
-	where
-		course_name = '운영체제');
+	student_id =
+		(select
+			student_id
+		from
+			course_registering_tb crt
+            left outer join crit_id ci on()
+		where
+			crt.course_registering_information_id = crit_id)
 
 
 

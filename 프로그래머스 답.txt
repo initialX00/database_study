@@ -1,0 +1,170 @@
+
+
+========mysql===========
+가장 비싼 상품 구하기
+select
+	max(PRICE)
+from
+	PRODUCT
+
+
+나이정보가 없는 회원 수 구하기
+select
+	count(Nullable) as USERS
+from
+	USER_INFO
+where
+	Nullable = TRUE;
+	
+
+
+동물의 아이디와 이름
+select
+	ANIMAL_ID
+	NAME
+from
+	ANIMAL_INS
+order by
+	ANIMAL_ID
+
+
+
+
+
+
+
+
+
+====== 자바 0단계 정답률 80%이하 풀기 ====
+
+
+
+월간코드챌린지 - 나머지가 1이 되는 수 찾기
+    int answer = 0;
+    int x = 2;
+    while(true) {
+        if(n % x = 1) {
+            if(answer == 0) {
+                answer = x;
+                break;
+            } 
+        }
+        a++;
+    }
+    return answer;
+
+
+
+월간코드챌린지 - 없는숫자 더하기
+    int answer = 45;
+    for(int num : numbers) {
+        anser -= num;
+    }
+    return answer;
+
+
+
+
+월간코드챌린지 - 약수의 갯수와 덧셈
+    int answer = 0;
+    for(int a = left; a <= right; a++){
+        int n = 0;
+        int count = 0;
+        while(true){
+            n++;
+            if(a % n == 0) {
+                count++;
+            }
+            if(n == a) {
+                break;
+            }
+        }
+        if(count % 2 == 0) {
+            answer += a;
+        } else {
+            answer -= a;
+        }
+        
+    }
+    return answer;
+
+
+
+
+월간코드 챌린지 - 음양더하기
+int answer = 0;
+for(int i = 0; i < absolutes_len; i++) {
+	if(signs[i] == true) {
+		answer += absoutes[i];
+	} else {
+		answer -= absoutes[i];
+	}
+}
+return answer;
+
+
+
+
+월간코드 챌린지 - 내적
+int answer = 0;
+for(int i = 0; i < a_len; i++) {
+	answer += a[i] * b[i];
+}
+
+
+
+
+
+
+월간코드 챌린지 - 3진법 뒤집기
+
+int i = 0;
+int x = answer;
+int z = 0;
+while(true) {
+ i++;
+ z = x % 3
+ x /= 3
+ if(i == 1) {
+  answer = z;
+ } 
+ answer = answer * 3 + z;
+ if(x == 0) {
+  break;
+ }
+}
+
+
+
+
+
+
+월간코드 챌린지 - 두개 뽑아서 더하기
+
+for(int i = 0; i < size_t; i++) {
+ for(int j = 0; j < size_t; j++) {
+  num = number[i] + number[j];
+  if(i == 0) {
+   a[i] = num;
+  }
+ 
+ }
+  for(int j = 0; j < size_t; j++) {
+   if(a[i] == a[j]) 
+ }
+
+ int a[] = num;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,28 @@
+ㅇhttps://sites.google.com/view/kji-java/index
+  db파일 받기 ( https://drive.google.com/file/d/1cwkwupbtPjVseMFkzHoWgUdvfM7_g9pv/view )
+  파일을 해당 servlet_study/config 폴더에 추가 ( servlet_study\src\main\java\com\korit\servlet_study\config )
+
+ㅇmvn에서 MySQL Connector Java
+  <dependency>
+     <groupId>mysql</groupId>
+     <artifactId>mysql-connector-java</artifactId>
+     <version>8.0.33</version>
+  </dependency>
+  pom.xml에 추가
+
+ㅇ11 -> 16으로 변경
+open modul setting(f4) - project - SDK 16
+
+ㅇ받은 파일의 클래스 DBConnectionMgr에서
+    private Vector connections = new Vector(10);
+    private String _driver = "com.mysql.cj.jdbc.Driver",
+    _url = "jdbc:mysql://localhost:3306/study",
+    _user = "root",
+    _password = "1q2w3e4r!";
+
+
+
+
+============
+
+DB >(싱글톤으로접근)> DAO > method
