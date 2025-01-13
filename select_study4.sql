@@ -93,38 +93,13 @@ from
 
 
 
-#view 테이블
-create view book_view as(
-	select
-		bt.book_id,
-		bt.book_name,
-		bt.isbn,
-		bt.author_id,
-		`at`.author_id as at_author_id,
-		`at`.author_name,
-		bt.publisher_id,
-		pt.publisher_id as pt_publisher_id,
-		pt.publisher_name,
-		bt.category_id,
-		ct.category_id as ct_category_id,
-		ct.category_name,
-		bt.book_img_url
-	from	
-		book_tb bt
-		left outer join author_tb `at` on `at`.author_id = bt.author_id
-		left outer join category_tb ct on ct.category_id = bt.category_id
-		left outer join publisher_tb pt on pt.publisher_id = bt.publisher_id
-);
-
-select
-	*
-from
-	book_view;
     
+
 
 
 # with 공통 데이블 표현식 (common table expression, cte)
 /*람다식처럼 1회성으로 사용하는 서브커리 제공*/
+
 set @searchData = '불'; /*변수 생성 set @변수명 = 값;*/
 /*set을 실행해줘야 적용이됨*/
 
@@ -158,6 +133,10 @@ where
     /*concat함수 전달받은 문자열을 모두 결합한다*/
     
     
+    
+    
+
+
 
 select
  lpad('123', 5, 0);

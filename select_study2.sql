@@ -160,7 +160,7 @@ from
 
 
 
-#where 와일드 카드(like)
+#where 와일드 카드( %, _, like )
 select
 	*
  from

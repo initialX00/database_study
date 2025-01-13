@@ -131,16 +131,15 @@ with crit_id as (
 select
 	student_name
 from
-	student_tb
+	student_tb 
 where
 	student_id =
 		(select
-			student_id
+			crt.student_id
 		from
 			course_registering_tb crt
-            left outer join crit_id ci on()
 		where
-			crt.course_registering_information_id = crit_id)
+			crt.course_registering_information_id = crit_id);
 
 
 
