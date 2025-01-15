@@ -10,6 +10,55 @@ where
 
 
 
+가장 큰 물고기 10마리 구하기
+select
+	ID
+	LENGTH
+from
+	FISH_INFO
+ober by
+	LENGTH desc
+partition by
+	ID
+
+
+조건에 부합하는 중고거래 댓글 조회하기
+select
+	TITLE
+	BOARD_ID
+from
+	USED_GOODS_BOARD
+	left outer join
+	(select
+		REPLY_ID
+		WRIER_ID
+		CONTENTS
+		CREATTED_DATE
+	from
+		USED_GOODS_REPLY)
+	아니면 outer left join USED_GOODS_REPLY on 항목들
+where
+	BOARD_ID = 
+	(select
+		BOARD_ID
+	from
+		USED_GOODS_REPLY
+	where
+		CREATED_DATE like '2022-10%')
+
+
+
+특정 형질을 가지는 대장균 찾기
+set @num = 
+
+select
+
+from
+	ECOLI_DATA
+where
+	
+
+
 
 
 ====== 자바 0단계 정답률 80%이하 풀기 ====
