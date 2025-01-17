@@ -11,9 +11,11 @@
   pom.xml에 추가
 
 ㅇ11 -> 16으로 변경
-open modul setting(f4) - project - SDK 16
+  open modul setting(f4) - project - SDK 16
 
-ㅇ받은 파일의 클래스 DBConnectionMgr에서
+
+ㅇDB와 연결
+    받은 파일의 클래스 DBConnectionMgr에서
     private Vector connections = new Vector(10);
     private String _driver = "com.mysql.cj.jdbc.Driver",
     _url = "jdbc:mysql://localhost:3306/study",

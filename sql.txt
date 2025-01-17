@@ -21,7 +21,7 @@ CHAR는 고정형이기에 잘 생각하고 수치를 입력해야한다. TEXT�
 
 서브커리는 출력값은 하나만 가능하다
 
-저장 : administration - export - 스케마 선택 - export to self
+저장 : administration - export - 스톨드,덤프이벤트,덤프트리거,크리에이트스키마 선택 - export to self
 불러오기: 로컬에서 불러오기 - CREATE TABLE, INSERT INTO 이외 삭제 -
 
 

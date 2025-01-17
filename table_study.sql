@@ -12,7 +12,7 @@ create view book_view as(
 		pt.publisher_id as pt_publisher_id,
 		pt.publisher_name,
 		bt.category_id,
-		ct.category_id as ct_category_id,
+		ct.category_id as ct_category_ibook_tbd,
 		ct.category_name,
 		bt.book_img_url
 	from	
@@ -114,7 +114,6 @@ set autocommit = 0;
 
 insert into data_b_tb
 values(default, '777'); /*껏다키면 저장 안되있음*/
-
 select * from data_b_tb;
 
 
