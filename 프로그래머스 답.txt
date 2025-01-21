@@ -2,14 +2,7 @@ mysql 삭제 후
 programfile, appdata, programdata 삭제해보기
 
 ========mysql===========
-자동차 장기,단기 대여 구분
-select
-	*, 
-	if(START_DATE - END_DATE >= '0000-00-30', '장기대여', '단기대여') as RENT_TYPE
-from
-	CAR_RENTAL_COMPANY_RENTAL_HISTORY
-where
-	START_DATE like '2022-09%'
+
 
 
 
@@ -19,7 +12,7 @@ select
 	LENGTH
 from
 	FISH_INFO
-ober by
+order by
 	LENGTH desc
 partition by
 	ID

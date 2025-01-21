@@ -34,6 +34,11 @@ select의 결과 또한 하나의 테이블형태이다.
 
 
 유니크를 걸면 자바에서 예외가 뜨므로 예외처리해줘야한다.
+
+
+function 생성 오류 - 권한부여하기
+show global variables like 'log_bin_trust_function_creators';
+SET GLOBAL log_bin_trust_function_creators = 1;
 =====이론=================
 
 
