@@ -39,6 +39,8 @@ select의 결과 또한 하나의 테이블형태이다.
 function 생성 오류 - 권한부여하기
 show global variables like 'log_bin_trust_function_creators';
 SET GLOBAL log_bin_trust_function_creators = 1;
+
+서버오류 - 서비스의 mysql 중지 후 다시 실행
 =====이론=================
 
 
