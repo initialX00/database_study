@@ -4,8 +4,6 @@ programfile, appdata, programdata 삭제해보기
 ========mysql===========
 
 
-
-
 가장 큰 물고기 10마리 구하기
 select
 	ID
@@ -24,6 +22,10 @@ select
 	BOARD_ID
 from
 	USED_GOODS_BOARD
+	left outer join USED_GOODS_REPLY on REPLY_ID
+where
+	CREATED_DATE like '2022-10%'
+
 	left outer join
 	(select
 		REPLY_ID
@@ -32,7 +34,7 @@ from
 		CREATTED_DATE
 	from
 		USED_GOODS_REPLY)
-	아니면 outer left join USED_GOODS_REPLY on 항목들
+	아니면 USED_GOODS_REPLY on 항목들
 where
 	BOARD_ID = 
 	(select
