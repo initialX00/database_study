@@ -49,7 +49,18 @@ where
 특정 형질을 가지는 대장균 찾기
 set @type = 0;
 set @count = 0;
-set @num
+set @i = 1;
+
+GENOTYPE_NUM: while
+
+(select GENOTYPE from ECOLI_DATA where ID = @i)
+count++;
+
+
+
+end while;
+
+
 
 select
 

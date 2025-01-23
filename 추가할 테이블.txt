@@ -1,0 +1,14 @@
+ㅇboard_tb
+board_id - INT
+title - VARCHAR(255)
+content - LONGTEXT
+user_id - INT
+create_date - DATETIME
+
+
+ㅇuser_tb
+user_id - INT
+username - VARCHAR(45)
+password - VARCHAR(255)
+name - VARCHAR(45)
+email - VARCHAR(45)
